@@ -4,7 +4,7 @@ set -euo pipefail
 
 # Default qBittorrent config
 if [[ ! -f /config/tinyproxy.conf ]]; then
-    cp /default/tinyproxy.conf /config/tinyproxy.conf
+    cp /etc/default/tinyproxy.conf /config/tinyproxy.conf
 fi
 
 exec "$@"
