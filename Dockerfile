@@ -26,3 +26,4 @@ HEALTHCHECK --interval=5m --timeout=60s --start-period=30s \
     CMD /usr/local/bin/healthcheck.sh || exit 1
 
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
+CMD ["tinyproxy", "-d", "-c", "/config/tinyproxy.conf"]
